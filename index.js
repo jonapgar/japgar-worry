@@ -4,7 +4,7 @@ const {
 const pidusage = require('pidusage')
 
 
-const lastValue = arr=>arr.last()
+const lastValue = arr=>arr.length ? arr[arr.length-1]:undefined
 const sum = arr=>arr.reduce((a,v)=>a+v,0)
 
 let start = Date.now()
